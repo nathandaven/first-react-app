@@ -1,13 +1,35 @@
+/* ./src/index.css */
+
+:root {
+    /* Color styles */
+    --primary--grey: #1E1F1C;
+    --white: #FFFFFF;
+    --secondary--grey: #272822;
+    --codeyellow: #E6DB74;
+    --codesand: #CF9F74;
+    --codemustard: #E6B422;
+    --codegreen: #A6E22E;
+    --codeblue: #66D9EF;
+    --codewhite: #EAEAE5;
+    --codepink: #E8236A;
+    --codeorange: #FD971F;
+    /* Text-size styles */
+    /* base size: default--text (18px) */
+    --default--text: 1rem;
+    /* Effect styles */
+    --card-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
