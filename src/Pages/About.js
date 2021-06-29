@@ -23,7 +23,7 @@ class About extends Component {
               </div>
 
               <div className="">
-                <h1 className="py-1">
+                <h1 className="py-1 text-xl">
                   <b>Hi!</b>
                 </h1>
 
@@ -53,7 +53,7 @@ class About extends Component {
                   >
                     Government Window
                   </a>
-                  , a local software company than manages payments for
+                  , a local software company that manages payments for
                   government clients. Over the past year I have redesigned and
                   coded out our front-end design language for 2021.
                 </p>

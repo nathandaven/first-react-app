@@ -17,12 +17,12 @@ class Card extends Component {
     return (
       <div
         className={classNames(
-          "text-left w-full rounded-md",
+          "text-left w-full rounded-md shadow-md",
           VARIANT_MAPS[this.props.variant]
         )}
       >
         <WindowButtons className="z-10" />
-        <div className="p-8 filter drop-shadow">
+        <div className="p-8 pt-2 filter font-mono">
           {/* Content */}
           {this.props.children}
         </div>

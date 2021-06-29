@@ -2,22 +2,61 @@ import { React, Component } from "react";
 import Page from "../Components/Page";
 import Card from "../Components/Card";
 
+//Media
+import GWPhoto from "../Media/gw.png";
+
 class Projects extends Component {
   render() {
     return (
       <Page variant="LIGHT" id="projects">
-        <div class=" w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
+        <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-2">
           <Card variant="DARK">
-            <p className="font-mono">hey</p>
+            <div className="">
+              <h1 className="text-xl py-4">
+                Government Window Corporate Website
+              </h1>
+              <img
+                className="rounded-md shadow-md"
+                src={GWPhoto}
+                alt="Government Window Project Example"
+              />
+            </div>
           </Card>
           <Card variant="DARK">
-            <p className="font-mono">hey</p>
+            <div className="">
+              <h1 className="text-xl py-4">
+                Government Window Corporate Website
+              </h1>
+              <img
+                className="rounded-md shadow-md"
+                src={GWPhoto}
+                alt="Government Window Project Example"
+              />
+            </div>
           </Card>
           <Card variant="DARK">
-            <p className="font-mono">hey</p>
+            <div className="">
+              <h1 className="text-xl py-4">
+                Government Window Corporate Website
+              </h1>
+              <img
+                className="rounded-md shadow-md"
+                src={GWPhoto}
+                alt="Government Window Project Example"
+              />
+            </div>
           </Card>
           <Card variant="DARK">
-            <p className="font-mono">hey</p>
+            <div className="">
+              <h1 className="text-xl py-4">
+                Government Window Corporate Website
+              </h1>
+              <img
+                className="rounded-md shadow-md"
+                src={GWPhoto}
+                alt="Government Window Project Example"
+              />
+            </div>
           </Card>
         </div>
       </Page>
