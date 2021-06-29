@@ -2,6 +2,13 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    /*
+    fontFamily: {
+      
+      sans: "-apple-system, BlinkMacSystemFont , sans-serif",
+      mono: ",mono",
+      
+    },*/
     colors: {
       primarygrey: "var(--primary--grey)",
       white: "var(--white)",

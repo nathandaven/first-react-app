@@ -1,17 +1,18 @@
 import { React, Component } from "react";
 import Page from "../Components/Page";
 import Card from "../Components/Card";
+import Title from "../Components/Title";
 
 // Media
 import ProfilePhoto from "../Media/profile.jpeg";
-
-function beans(props) {}
 
 class About extends Component {
   render() {
     return (
       <Page variant="DARK" id="about">
-        <Card variant="LIGHT">
+        <Title text="About" />
+
+        <Card variant="DARK">
           <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-2  font-mono">
             <div className="">
               <div className="pb-6">

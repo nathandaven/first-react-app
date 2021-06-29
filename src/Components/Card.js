@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { ReactComponent as WindowButtons } from "../Media/window-buttons.svg";
 
 const VARIANT_MAPS: Record<Variant, string> = {
-  DARK: "bg-primarygrey text-codewhite",
+  DARK: "bg-secondarygrey text-codewhite",
   LIGHT: "bg-codewhite text-primarygrey",
 };
 
