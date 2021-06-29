@@ -12,9 +12,7 @@ class Projects extends Component {
         <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-2">
           <Card variant="DARK">
             <div className="">
-              <h1 className="text-xl py-4">
-                Government Window Corporate Website
-              </h1>
+              <h1 className="y-4">Government Window Corporate Website</h1>
               <img
                 className="rounded-md shadow-md"
                 src={GWPhoto}
@@ -24,9 +22,7 @@ class Projects extends Component {
           </Card>
           <Card variant="DARK">
             <div className="">
-              <h1 className="text-xl py-4">
-                Government Window Corporate Website
-              </h1>
+              <h1 className="py-4">Government Window Corporate Website</h1>
               <img
                 className="rounded-md shadow-md"
                 src={GWPhoto}
@@ -36,9 +32,7 @@ class Projects extends Component {
           </Card>
           <Card variant="DARK">
             <div className="">
-              <h1 className="text-xl py-4">
-                Government Window Corporate Website
-              </h1>
+              <h1 className="py-4">Government Window Corporate Website</h1>
               <img
                 className="rounded-md shadow-md"
                 src={GWPhoto}
@@ -48,9 +42,7 @@ class Projects extends Component {
           </Card>
           <Card variant="DARK">
             <div className="">
-              <h1 className="text-xl py-4">
-                Government Window Corporate Website
-              </h1>
+              <h1 className="py-4">Government Window Corporate Website</h1>
               <img
                 className="rounded-md shadow-md"
                 src={GWPhoto}
