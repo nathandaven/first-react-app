@@ -19,7 +19,8 @@ import { HashLink as Link } from "react-router-hash-link";
 class Header extends Component {
   render() {
     return (
-      <header className="sticky top-0 z-50 justify-center items-center bg-codewhite shadow-md">
+      <header className="absolute top-0 left-0 right-0 z-50 justify-center items-center">
+        {/* bg-codewhite shadow-md */}
         <nav className="container mx-auto xl:px-40 flex justify-center items-center h-16 px-4">
           <Router>
             {/* Logo / title */}

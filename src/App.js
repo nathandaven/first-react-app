@@ -6,6 +6,8 @@ import Projects from "./Pages/Projects";
 import Experience from "./Pages/Experience";
 import Contact from "./Pages/Contact";
 import { React, Component } from "react";
+// Media
+import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 
 class App extends Component {
   componentDidMount() {
@@ -16,7 +18,10 @@ class App extends Component {
     return (
       <div className="App bg-codewhite">
         <Header />
-        <main className="w-full  ml-auto" role="main">
+        {/* <div className="absolute w-full z-0z-0">
+          <CircleBG preserveAspectRatio="none" className="" />
+        </div> */}
+        <main className="w-full ml-auto" role="main">
           {/* md:w-5/12 */}
           <Home />
           <About />

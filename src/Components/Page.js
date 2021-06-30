@@ -5,6 +5,7 @@ import classNames from "classnames";
 const VARIANT_MAPS: Record<Variant, string> = {
   DARK: "bg-primarygrey text-codewhite",
   LIGHT: "bg-codewhite text-primarygrey",
+  CIRCLE: "bg-circlebgfull bg-no-repeat bg-local bg-contain bg-top",
 };
 
 // Header Component
