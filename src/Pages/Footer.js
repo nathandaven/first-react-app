@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <footer className=" bg-codewhitedark text-primarygrey p-8 ">
+        <footer className=" bg-codewhite text-primarygrey p-8 ">
           <div className="container  mx-auto xl:px-40 flex justify-between  text-left ">
             <ul>
               <li className="pb-4">

@@ -17,7 +17,7 @@ class Card extends Component {
     return (
       <div
         className={classNames(
-          "text-left w-full rounded-md shadow-md my-2 p-8",
+          "text-left w-full rounded-md shadow-xl my-2 p-8",
           VARIANT_MAPS[this.props.variant]
         )}
       >
