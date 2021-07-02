@@ -1,6 +1,6 @@
 import { React, Component } from "react";
 import Page from "../Components/Page";
-
+import Continue from "../Components/Continue";
 class Contact extends Component {
   render() {
     return (
@@ -13,6 +13,7 @@ class Contact extends Component {
             <a href="mailto:nathandaven@gmail.com">nathandaven@gmail.com</a>
           </b>
         </h4>
+        <Continue />
       </Page>
     );
   }

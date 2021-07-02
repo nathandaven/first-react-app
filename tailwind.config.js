@@ -10,7 +10,7 @@ module.exports = {
       backgroundSize: {
         "50%": "50%",
         16: "4rem",
-        circle: "auto 36em",
+        circle: "auto 50%",
       },
       fontFamily: {
         sans: ["Red Hat Display", "-apple-system", "sans-serif"],
@@ -28,6 +28,15 @@ module.exports = {
         codewhite: "var(--codewhite)",
         codepink: "var(--codepink)",
         codeorange: "var(--codeorange)",
+      },
+      minHeight: {
+        0: "0",
+        "1/4": "25%",
+        "1/2": "50%",
+        "3/4": "75%",
+        full: "100%",
+        screen50: "50vh",
+        screen75: "75vh",
       },
     },
   },

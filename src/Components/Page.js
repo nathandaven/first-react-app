@@ -17,7 +17,8 @@ class Page extends Component {
         className={classNames("", VARIANT_MAPS[this.props.variant])}
         id={this.props.id}
       >
-        <div className="container mx-auto xl:px-40 min-h-screen flex justify-center items-center text-center flex-col p-4">
+        {/*min-h-screen*/}
+        <div className="container mx-auto xl:px-40 min-h-screen flex justify-around items-baseline text-center flex-col p-4">
           {this.props.children}
         </div>
       </section>

@@ -2,6 +2,7 @@ import { React, Component } from "react";
 import Page from "../Components/Page";
 import Card from "../Components/Card";
 import Title from "../Components/Title";
+import Continue from "../Components/Continue";
 
 // Media
 import ProfilePhoto from "../Media/profile.jpeg";
@@ -10,7 +11,7 @@ class About extends Component {
   render() {
     return (
       <Page variant="DARK" id="about">
-        <Title text="About" />
+        <Title text="About:" />
 
         <Card variant="DARK">
           <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-2  font-mono">
@@ -56,7 +57,8 @@ class About extends Component {
                   </a>
                   , a local software company that manages payments for
                   government clients. Over the past year I have redesigned and
-                  coded out our front-end design language for 2021.
+                  coded out our front-end design language for 2021, shipping out
+                  at least a dozen websites.
                 </p>
 
                 <p className="py-1">
@@ -64,13 +66,13 @@ class About extends Component {
                   drink coffee! Thanks for checking out my website 😄
                 </p>
               </div>
-              {/* 
+
               <div className="pt-6">
-                <p className="font-mono text-primarygrey">
+                <p className="font-mono text-codewhite">
                   <span className="text-codepink">export default </span>
                   <span className="text-codegreen underline">About</span>;
                 </p>
-              </div> */}
+              </div>
             </div>
             <div className="px-8 flex items-center justify-center">
               <img
@@ -81,6 +83,7 @@ class About extends Component {
             </div>
           </div>
         </Card>
+        <Continue />
       </Page>
     );
   }
