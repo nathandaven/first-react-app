@@ -26,6 +26,7 @@ module.exports = {
         codegreen: "var(--codegreen)",
         codeblue: "var(--codeblue)",
         codewhite: "var(--codewhite)",
+        codewhitedark: "var(--codewhitedark)",
         codepink: "var(--codepink)",
         codeorange: "var(--codeorange)",
       },

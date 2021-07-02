@@ -55,7 +55,7 @@ class Header extends Component {
         )}
       >
         {/* bg-codewhite shadow-md */}
-        <nav className="container mx-auto xl:px-40 flex justify-center items-center h-16 px-4 ">
+        <nav className="container mx-auto xl:px-20 flex justify-center items-center h-16 px-4 ">
           <Router>
             {/* Logo / title */}
             <div className="flex-1 text-left">

@@ -3,9 +3,8 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Projects from "./Pages/Projects";
-import Experience from "./Pages/Experience";
-import Contact from "./Pages/Contact";
 import { React, Component } from "react";
+import Footer from "./Pages/Footer";
 // Media
 import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 
@@ -26,8 +25,7 @@ class App extends Component {
           <Home />
           <About />
           <Projects />
-          <Experience />
-          <Contact />
+          <Footer />
         </main>
       </div>
     );

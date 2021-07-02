@@ -8,7 +8,7 @@ class Experience extends Component {
     return (
       /* className="container mx-auto lg:px-40 " */
       <Page variant="DARK" id="experience">
-        <Title text="Experience:" />
+        <Title text="Experience" />
 
         <Card variant="DARK">
           <div className="">

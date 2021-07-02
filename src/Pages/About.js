@@ -11,18 +11,18 @@ class About extends Component {
   render() {
     return (
       <Page variant="DARK" id="about">
-        <Title text="About:" />
+        <Title text="About" />
 
         <Card variant="DARK">
           <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-2  font-mono">
             <div className="">
-              <div className="pb-6">
+              {/* <div className="pb-6">
                 <p className="font-mon">
                   <span className="text-codepink">import</span> &#123; About
                   &#125;
                   <span className="text-codepink"> from </span>“nathandaven”;
                 </p>
-              </div>
+              </div> */}
 
               <div className="">
                 <h1 className="py-1 text-xl">

@@ -18,7 +18,7 @@ class Page extends Component {
         id={this.props.id}
       >
         {/*min-h-screen*/}
-        <div className="container mx-auto xl:px-40 min-h-screen flex justify-around items-baseline text-center flex-col p-4">
+        <div className="container mx-auto xl:px-20 min-h-screen flex justify-around items-baseline text-center flex-col p-4">
           {this.props.children}
         </div>
       </section>
