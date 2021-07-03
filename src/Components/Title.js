@@ -6,7 +6,7 @@ class Title extends Component {
   render() {
     return (
       <div className="py-8 pb-10">
-        <div className="  text-left flex w-full">
+        <div className="pt-8  text-left flex w-full">
           <h1 className="text-7xl font-bold">{this.props.text}:</h1>
         </div>
         <p className="font-mono pt-6">

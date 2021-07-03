@@ -14,8 +14,9 @@ class About extends Component {
         <Title text="About" />
 
         <Card variant="DARK">
-          <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-2  font-mono">
-            <div className="">
+          {/* <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-2  font-mono"> */}
+          <div className=" w-full flex content-evenly lg:flex-row flex-col  font-mono">
+            <div className="order-2 lg:order-1 w-full">
               {/* <div className="pb-6">
                 <p className="font-mon">
                   <span className="text-codepink">import</span> &#123; About
@@ -25,7 +26,7 @@ class About extends Component {
               </div> */}
 
               <div className="">
-                <h1 className="py-1 text-xl">
+                <h1 className="py-2 pb-8 text-4xl font-sans">
                   <b>Hi!</b>
                 </h1>
 
@@ -67,14 +68,14 @@ class About extends Component {
                 </p>
               </div>
 
-              <div className="pt-6">
+              <div className="pt-8 ">
                 <p className="font-mono text-codewhite">
                   <span className="text-codepink">export default </span>
                   <span className="text-codegreen underline">About</span>;
                 </p>
               </div>
             </div>
-            <div className="px-8 flex items-center justify-center">
+            <div className="px-8 order-1 w-full lg:order-2 flex items-center justify-center">
               <img
                 className="bg-white p-1 rounded-full  shadow-lg"
                 src={ProfilePhoto}

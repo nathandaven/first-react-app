@@ -4,9 +4,13 @@ import Card from "../Components/Card";
 import Title from "../Components/Title";
 import ProjectCard from "../Components/ProjectCard";
 import Continue from "../Components/Continue";
+
 //Media
 import GWPhoto from "../Media/gw.png";
 import TravelerPhoto from "../Media/traveler.png";
+import BarsPhoto from "../Media/bars-photo.png";
+import RayTracerPhoto from "../Media/jsraytracer-photo.png";
+import HearatalePhoto from "../Media/hearatale-photo.png";
 
 class Projects extends Component {
   render() {
@@ -14,44 +18,59 @@ class Projects extends Component {
       <Page variant="LIGHT" id="projects">
         <Title text="Projects" />
 
-        <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
-          <Card variant="LIGHT">
-            <div className="">
-              <div className="">
-                <div className="py-4">
-                  <img
-                    className="rounded-lg drop-shadow-lg"
-                    src={TravelerPhoto}
-                    alt="Title screen of my Game Boy Advance game, Traveler: The Quest for Mead"
-                  />
-                </div>
-                <h1 className="pt-1 pb-2 text-2xl font-sans">
-                  <b>Traveler: The Quest for Mead</b>
-                </h1>
-
-                <p className="py-1 font-sans">
-                  My final project for CS 2261 at Georgia Tech. A top down and
-                  side-scrolling RPG built in C and assembly for the Game Boy
-                  Advance, using all original art and designs.
-                </p>
-              </div>
-
-              <div className="pt-6 flex justify-between items-center">
-                <p className="font-mono ">
-                  <span className="text-codepink">export default </span>
-                  <span className="text-primarygrey underline">Project</span>;
-                </p>
-                <div className="text-right">
-                  <button className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primarygrey text-md font-sans drop-shadow-md">
-                    Details >
-                  </button>
-                  <button className="px-6 py-2 mx-2 my-1 rounded-md bg-green-600 hover:bg-green-700  text-white text-md font-sans drop-shadow-md">
-                    Github >
-                  </button>
-                </div>
-              </div>
-            </div>
-          </Card>
+        <div className="pb-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
+          <ProjectCard
+            title="Traveler: The Quest for Mead"
+            photo={TravelerPhoto}
+            github="https://github.com/nathandaven/traveller-gba"
+            link="https://github.com/nathandaven/traveller-gba"
+          >
+            <p>
+              My final project for CS 2261 at Georgia Tech. A top down and
+              side-scrolling RPG built in C and assembly for the Game Boy
+              Advance, using all original art and designs.
+            </p>
+          </ProjectCard>
+          <ProjectCard
+            title="Audio Responsive Bars"
+            photo={BarsPhoto}
+            github="https://github.com/nathandaven/audio-responsive-bars"
+            link="https://nathandaven.com/works/aframe/"
+          >
+            <p>
+              A reactive audio engine for the aframe.io framework. The bars will
+              react to the amplitude of three selected music tracks. Created for
+              the class LMC 2700.
+            </p>
+          </ProjectCard>
+          <ProjectCard
+            title="jsRayTracer"
+            photo={RayTracerPhoto}
+            github="https://github.com/nathandaven/jsRayTracer"
+            link="https://github.com/nathandaven/jsRayTracer"
+          >
+            <p>
+              This is my Ray Tracer project for CS 3451 Computer Graphics at
+              Georgia Tech. This project implements ray tracing implementations
+              for spheres and disks, and adds functionality for diffuse
+              lighting, soft shadows, point lights, area lights, anti aliased
+              sub sampling, and jitter shadow math.
+            </p>
+          </ProjectCard>
+          <ProjectCard
+            title="Third Grade Contractions"
+            photo={HearatalePhoto}
+            github="https://github.com/penalverbj/3rdGradeLiteracyApp"
+            link="https://drive.google.com/file/d/1Ca44nozhrrNWHe663-N_DIC3KSULpymz/view?usp=sharing"
+          >
+            <p>
+              My GT Junior Design developed an iOS/Android application for Hear
+              a Tale, a teaching non-profit. Using React-Native, we built the
+              third grade portion of the app. This app teaches contractions
+              using visual and auditory cues, with challenging quizzes and
+              informative lessons.
+            </p>
+          </ProjectCard>
         </div>
         <div></div>
       </Page>
