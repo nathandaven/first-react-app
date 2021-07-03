@@ -87,6 +87,13 @@ class Header extends Component {
               >
                 Projects
               </Link>
+              <Link
+                smooth
+                to="/#design"
+                className="flex-1 flex-auto text-center transform hover:scale-110"
+              >
+                Design
+              </Link>
             </div>
 
             {/* Social Icons */}

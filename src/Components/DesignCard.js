@@ -4,26 +4,19 @@ import Card from "./Card";
 import { motion } from "framer-motion";
 
 import Photo from "../Media/traveler.png";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Header Component
 // DARK or LIGHT variant prop
-class ProjectCard extends Component {
+class DesignCard extends Component {
   constructor(props) {
     super(props);
 
     // This binding is necessary to make `this` work in the callback
     this.goToLink = this.goToLink.bind(this);
-    this.goToGithub = this.goToGithub.bind(this);
   }
 
   goToLink = () => {
     window.open(this.props.link, "_blank");
-  };
-
-  goToGithub = () => {
-    window.open(this.props.github, "_blank");
   };
 
   render() {
@@ -65,23 +58,12 @@ class ProjectCard extends Component {
             <div className="pt-6 flex justify-between items-center">
               <p className="font-mono ">
                 <span className="text-codepink">export default </span>
-                <span className="text-primarygrey underline">Project</span>;
+                <span className="text-primarygrey underline">Design</span>;
               </p>
               <div className="text-right">
                 <button
-                  onClick={this.goToGithub}
-                  className="px-6 py-2 mx-2 my-1 rounded-md text-primarygrey text-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 font-sans drop-shadow-md"
-                >
-                  GitHub{" "}
-                  <FontAwesomeIcon
-                    className="transform hover:scale-110"
-                    icon={faGithub}
-                  />
-                </button>
-
-                <button
                   onClick={this.goToLink}
-                  className="px-6 py-2 mx-2 my-1 rounded-md bg-green-600 hover:bg-green-700  text-white  text-md font-sans drop-shadow-md"
+                  className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primarygrey text-md font-sans drop-shadow-md"
                 >
                   Details >
                 </button>
@@ -94,4 +76,4 @@ class ProjectCard extends Component {
   }
 }
 
-export default ProjectCard;
+export default DesignCard;

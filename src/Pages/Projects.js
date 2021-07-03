@@ -11,6 +11,8 @@ import TravelerPhoto from "../Media/traveler.png";
 import BarsPhoto from "../Media/bars-photo.png";
 import RayTracerPhoto from "../Media/jsraytracer-photo.png";
 import HearatalePhoto from "../Media/hearatale-photo.png";
+import AxiomaticPhoto from "../Media/axiomatic-photo.png";
+import BlindPhoto from "../Media/blind-photo.png";
 
 class Projects extends Component {
   render() {
@@ -31,6 +33,7 @@ class Projects extends Component {
               Advance, using all original art and designs.
             </p>
           </ProjectCard>
+
           <ProjectCard
             title="Audio Responsive Bars"
             photo={BarsPhoto}
@@ -43,6 +46,7 @@ class Projects extends Component {
               the class LMC 2700.
             </p>
           </ProjectCard>
+
           <ProjectCard
             title="jsRayTracer"
             photo={RayTracerPhoto}
@@ -57,6 +61,7 @@ class Projects extends Component {
               sub sampling, and jitter shadow math.
             </p>
           </ProjectCard>
+
           <ProjectCard
             title="Third Grade Contractions"
             photo={HearatalePhoto}
@@ -72,6 +77,7 @@ class Projects extends Component {
             </p>
           </ProjectCard>
         </div>
+
         <div></div>
       </Page>
     );

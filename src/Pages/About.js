@@ -66,6 +66,19 @@ class About extends Component {
                   In my free time, I like to produce music, skateboard, and
                   drink coffee! Thanks for checking out my website 😄
                 </p>
+
+                <p className="py-1 pt-8">
+                  Looking for my resume? Find it{" "}
+                  <a
+                    href="https://drive.google.com/file/d/1SdDLIztC9DOZ7hB5Jur1OtiyXhqxme11/view?usp=sharing"
+                    target="_blank"
+                    ref="noreferrer"
+                    className="text-codeorange hover:underline"
+                  >
+                    <b>here</b>
+                  </a>
+                  .
+                </p>
               </div>
 
               <div className="pt-8 ">
