@@ -48,9 +48,12 @@ class DesignCard extends Component {
                   alt={this.props.title}
                 />
               </div>
-              <h1 className="py-1 text-2xl">
-                <b>{this.props.title}</b>
-              </h1>
+              <div className="py-1">
+                <h1 className="text-2xl">
+                  <b>{this.props.title}</b>
+                </h1>
+                <h2 className=" text-md">{this.props.date}</h2>
+              </div>
 
               <p className="py-1">{this.props.children}</p>
             </div>
@@ -65,7 +68,7 @@ class DesignCard extends Component {
                   onClick={this.goToLink}
                   className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primarygrey text-md font-sans drop-shadow-md"
                 >
-                  Details >
+                  Check it out >
                 </button>
               </div>
             </div>

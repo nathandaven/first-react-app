@@ -22,6 +22,7 @@ class Design extends Component {
         <div className="pb-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
           <DesignCard
             title="Macon-Bibb County Tax"
+            date="May 2021"
             photo={MaconBibbPhoto}
             link="http://www.govtwindow.net/"
           >
@@ -34,6 +35,7 @@ class Design extends Component {
 
           <DesignCard
             title="Paulding County Tax"
+            date="June 2021"
             photo={PauldingPhoto}
             link="http://www.pauldingcountytax.com/index.html"
           >
@@ -46,6 +48,7 @@ class Design extends Component {
 
           <DesignCard
             title="Government Window Homepage"
+            date="April 2021"
             photo={GWPhoto}
             link="https://www.governmentwindow.com/"
           >
@@ -59,6 +62,7 @@ class Design extends Component {
 
           <DesignCard
             title="Government Window Stationary"
+            date="March 2021"
             photo={GWCardPadPhoto}
             link="https://www.governmentwindow.com/"
           >
@@ -72,6 +76,7 @@ class Design extends Component {
 
           <DesignCard
             title="Ethics of Axiomatic Design"
+            date="Fall 2020"
             photo={AxiomaticPhoto}
             link="https://drive.google.com/file/d/1q1UCfAxZFIDYwymI4vHIUr1rvA1uQrFq/view?usp=sharing"
           >
@@ -85,6 +90,7 @@ class Design extends Component {
 
           <DesignCard
             title="Blind Style Guide"
+            date="Spring 2020"
             photo={BlindPhoto}
             link="https://drive.google.com/file/d/129HrQ5LrOe5QZlsJDLEu0YHb7Q4oNDXY/view"
           >
@@ -95,7 +101,7 @@ class Design extends Component {
             </p>
           </DesignCard>
         </div>
-        <div></div>
+        <div className="py-4"></div>
       </Page>
     );
   }

@@ -6,6 +6,7 @@ import Projects from "./Pages/Projects";
 import { React, Component } from "react";
 import Footer from "./Pages/Footer";
 import Design from "./Pages/Design";
+import Photobook from "./Pages/Photobook";
 // Media
 import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 
@@ -27,6 +28,7 @@ class App extends Component {
           <About />
           <Projects />
           <Design />
+          <Photobook />
           <Footer />
         </main>
       </div>

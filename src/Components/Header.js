@@ -68,13 +68,6 @@ class Header extends Component {
             <div className="flex-1 flex flex-auto">
               <Link
                 smooth
-                to="/#home"
-                className="flex-1  flex-auto text-center transform hover:scale-110"
-              >
-                Home
-              </Link>
-              <Link
-                smooth
                 to="/#about"
                 className="flex-1 flex-auto text-center transform hover:scale-110"
               >
@@ -93,6 +86,13 @@ class Header extends Component {
                 className="flex-1 flex-auto text-center transform hover:scale-110"
               >
                 Design
+              </Link>
+              <Link
+                smooth
+                to="/#photobook"
+                className="flex-1 flex-auto text-center transform hover:scale-110"
+              >
+                Photobook
               </Link>
             </div>
 

@@ -13,6 +13,8 @@ import RayTracerPhoto from "../Media/jsraytracer-photo.png";
 import HearatalePhoto from "../Media/hearatale-photo.png";
 import AxiomaticPhoto from "../Media/axiomatic-photo.png";
 import BlindPhoto from "../Media/blind-photo.png";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Projects extends Component {
   render() {
@@ -23,6 +25,7 @@ class Projects extends Component {
         <div className="pb-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
           <ProjectCard
             title="Traveler: The Quest for Mead"
+            date="Fall 2020"
             photo={TravelerPhoto}
             github="https://github.com/nathandaven/traveller-gba"
             link="https://github.com/nathandaven/traveller-gba"
@@ -36,6 +39,7 @@ class Projects extends Component {
 
           <ProjectCard
             title="Audio Responsive Bars"
+            date="Fall 2019"
             photo={BarsPhoto}
             github="https://github.com/nathandaven/audio-responsive-bars"
             link="https://nathandaven.com/works/aframe/"
@@ -49,6 +53,7 @@ class Projects extends Component {
 
           <ProjectCard
             title="jsRayTracer"
+            date="Spring 2021"
             photo={RayTracerPhoto}
             github="https://github.com/nathandaven/jsRayTracer"
             link="https://github.com/nathandaven/jsRayTracer"
@@ -64,6 +69,7 @@ class Projects extends Component {
 
           <ProjectCard
             title="Third Grade Contractions"
+            date="Fall 2020 - Spring 2021"
             photo={HearatalePhoto}
             github="https://github.com/penalverbj/3rdGradeLiteracyApp"
             link="https://drive.google.com/file/d/1Ca44nozhrrNWHe663-N_DIC3KSULpymz/view?usp=sharing"
@@ -77,7 +83,20 @@ class Projects extends Component {
             </p>
           </ProjectCard>
         </div>
-
+        <div className="flex w-full justify-center text-center ">
+          <a
+            className="transform hover:scale-105 py-5 "
+            href="https://www.github.com/nathandaven"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Check out my{" "}
+            <b className="text-green-900">
+              <FontAwesomeIcon className="" icon={faGithub} /> Github{"  "}
+            </b>{" "}
+            for more >
+          </a>
+        </div>
         <div></div>
       </Page>
     );

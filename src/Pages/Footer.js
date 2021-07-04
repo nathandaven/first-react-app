@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <>
         <footer className=" bg-codewhite text-primarygrey  py-8 px-8 sm:px-0">
-          <div className="container  mx-auto px-4 xl:px-40 ">
+          <div className="container  mx-auto xl:px-40 ">
             <div className="flex justify-between  text-left">
               <b className="">Nathan Davenport</b>
               <Socials />

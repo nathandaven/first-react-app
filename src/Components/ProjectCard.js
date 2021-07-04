@@ -4,7 +4,7 @@ import Card from "./Card";
 import { motion } from "framer-motion";
 
 import Photo from "../Media/traveler.png";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Header Component
@@ -55,10 +55,12 @@ class ProjectCard extends Component {
                   alt={this.props.title}
                 />
               </div>
-              <h1 className="py-1 text-2xl">
-                <b>{this.props.title}</b>
-              </h1>
-
+              <div className="py-1">
+                <h1 className="text-2xl">
+                  <b>{this.props.title}</b>
+                </h1>
+                <h2 className=" text-md">{this.props.date}</h2>
+              </div>
               <p className="py-1">{this.props.children}</p>
             </div>
 
