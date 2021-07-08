@@ -4,6 +4,7 @@ import Continue from "../Components/Continue";
 import Title from "../Components/Title";
 import GooglePhotoGallery from "../Components/GooglePhotoGallery";
 import Card from "../Components/Card";
+import { Link } from "react-router-dom";
 
 import ImageGallery from "react-image-gallery";
 
@@ -37,6 +38,11 @@ class Photobook extends Component {
               </p>
             </div>
             <GooglePhotoGallery galleryID="AF1QipPBipqXTJd7ysp4eL7sL_jFcf6ypmASLHm6RbGZ" />
+            <div className="flex justify-center hover:underline font-sans pt-4">
+              <Link to="/photobook">
+                <a>See More ></a>
+              </Link>
+            </div>
           </Card>
           <div className="py-1"></div>
         </Page>

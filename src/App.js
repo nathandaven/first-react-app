@@ -7,6 +7,9 @@ import { React, Component } from "react";
 import Footer from "./Pages/Footer";
 import Design from "./Pages/Design";
 import Photobook from "./Pages/Photobook";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainScreen from "./Screens/MainScreen";
+import PhotobookScreen from "./Screens/PhotobookScreen";
 // Media
 import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 
@@ -18,19 +21,10 @@ class App extends Component {
   render() {
     return (
       <div className="App bg-codewhite">
-        <Header />
-        {/* <div className="absolute w-full z-0z-0">
-          <CircleBG preserveAspectRatio="none" className="" />
-        </div> */}
-        <main className="w-full ml-auto" role="main">
-          {/* md:w-5/12 */}
-          <Home />
-          <About />
-          <Projects />
-          <Design />
-          <Photobook />
-          <Footer />
-        </main>
+        <Router>
+          <Route exact path="/" component={MainScreen} />
+          <Route exact path="/photobook" component={PhotobookScreen} />
+        </Router>
       </div>
     );
   }

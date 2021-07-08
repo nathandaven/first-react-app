@@ -17,7 +17,7 @@ const shuffle = (array) => {
   }
 };
 
-const GooglePhotosGallery = () => {
+function GooglePhotosGallery() {
   const [images, setImages] = React.useState(null);
   React.useEffect(() => {
     let shouldCancel = false;
@@ -52,6 +52,6 @@ const GooglePhotosGallery = () => {
       />
     </div>
   ) : null;
-};
+}
 
 export default GooglePhotosGallery;
