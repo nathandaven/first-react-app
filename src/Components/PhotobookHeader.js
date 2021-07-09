@@ -50,12 +50,11 @@ class PhotobookHeader extends Component {
         {/* bg-codewhite shadow-md */}
         <nav className="container mx-auto px-4 xl:px-40 flex justify-center items-center h-16  ">
           {/* Logo / title */}
-          <div className="flex-1 text-left  hidden sm:contents">
+          <div className="flex-1 text-left  ">
             <div className="flex-1 flex ">
               <Link
-                smooth
                 to="/"
-                className="text-left transform hover:scale-110"
+                className="text-left text-xl transform hover:scale-110"
               >
                 {"<"} back
               </Link>
@@ -63,7 +62,7 @@ class PhotobookHeader extends Component {
           </div>
 
           {/* Sections */}
-          <div className="flex-1 flex flex-auto">
+          <div className="flex-1 flex flex-auto hidden md:contents">
             <Link
               smooth
               to="/"
