@@ -91,13 +91,13 @@ class Projects extends Component {
             rel="noreferrer"
           >
             Check out my{" "}
-            <b className="text-green-900">
+            <b className="text-green-900 dark:text-green-400">
               <FontAwesomeIcon className="" icon={faGithub} /> Github{"  "}
             </b>{" "}
             for more >
+            <Continue />
           </a>
         </div>
-        <div></div>
       </Page>
     );
   }

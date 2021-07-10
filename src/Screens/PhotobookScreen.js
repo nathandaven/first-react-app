@@ -1,5 +1,4 @@
 import React from "react";
-
 import PhotobookHeader from "../Components/PhotobookHeader";
 import Page from "../Components/Page";
 import GooglePhotoList from "../Components/GooglePhotoList";
@@ -12,7 +11,10 @@ function PhotobookScreen() {
 
   return (
     <>
-      <main className="w-full ml-auto" role="main">
+      <main
+        className="w-full ml-auto text-primarygrey dark:text-codewhite"
+        role="main"
+      >
         <PhotobookHeader />
         <Page>
           <div className="my-20"></div>
@@ -72,7 +74,6 @@ function PhotobookScreen() {
           </motion.div>
           <div className=""></div>
           <GooglePhotoList galleryID={currentGallery} />{" "}
-          {/* XaVbN7HVYqgGagk66 */}
         </Page>
       </main>
     </>

@@ -67,12 +67,15 @@ class ProjectCard extends Component {
             <div className="pt-6 flex justify-between items-center">
               <p className="font-mono ">
                 <span className="text-codepink">export default </span>
-                <span className="text-primarygrey underline">Project</span>;
+                <span className="text-primarygrey dark:text-codewhite underline">
+                  Project
+                </span>
+                ;
               </p>
               <div className="text-right">
                 <button
                   onClick={this.goToGithub}
-                  className="px-6 py-2 mx-2 my-1 rounded-md text-primarygrey text-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 font-sans drop-shadow-md"
+                  className="px-6 py-2 mx-2 my-1 rounded-md text-primarygrey text-md bg-gray-300 dark:text-codewhite bg-opacity-50 hover:bg-opacity-75 font-sans drop-shadow-md"
                 >
                   GitHub{" "}
                   <FontAwesomeIcon

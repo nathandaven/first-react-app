@@ -101,7 +101,7 @@ class Design extends Component {
             </p>
           </DesignCard>
         </div>
-        <div className="py-4"></div>
+        <Continue />
       </Page>
     );
   }

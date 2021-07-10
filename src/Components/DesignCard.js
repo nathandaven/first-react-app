@@ -66,7 +66,7 @@ class DesignCard extends Component {
               <div className="text-right">
                 <button
                   onClick={this.goToLink}
-                  className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primarygrey text-md font-sans drop-shadow-md"
+                  className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primarygrey dark:text-codewhite text-md font-sans drop-shadow-md"
                 >
                   Check it out >
                 </button>

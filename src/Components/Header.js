@@ -30,10 +30,10 @@ class Header extends Component {
 
   handleScroll(event) {
     let tag = "";
-    if (window.pageYOffset > 600) {
-      tag = "text-codewhite mix-blend-exclusion ";
+    if (window.pageYOffset > 500) {
+      tag = "text-codewhite  mix-blend-exclusion ";
     } else {
-      tag = "text-primarygrey";
+      tag = "text-primarygrey ";
     }
     this.setState({
       color: tag,

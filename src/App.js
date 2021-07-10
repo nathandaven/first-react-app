@@ -16,11 +16,21 @@ import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 class App extends Component {
   componentDidMount() {
     document.title = "Nathan Davenport";
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }
 
   render() {
     return (
-      <div className="App bg-codewhite">
+      <div className="App bg-codewhite dark:bg-primarygrey">
         <Router>
           <Route exact path="/" component={MainScreen} />
           <Route exact path="/photobook" component={PhotobookScreen} />

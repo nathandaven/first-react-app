@@ -43,7 +43,7 @@ class PhotobookHeader extends Component {
     return (
       <header
         className={classNames(
-          "fixed top-0 left-0 right-0 z-50 justify-center items-center",
+          "fixed top-0 left-0 right-0 z-50 justify-center items-center text-primarygrey dark:text-codewhite",
           this.state.color
         )}
       >

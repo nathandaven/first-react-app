@@ -45,7 +45,7 @@ class Home extends Component {
               </div>
             </div>
 
-            <div className="pt-20">
+            <div className="pt-20 text-primarygrey dark:text-codewhite">
               <div className="flex align-middle	 justify-end">
                 <motion.div
                   animate={{ scale: 1.2 }}

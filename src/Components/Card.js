@@ -7,7 +7,8 @@ import { ReactComponent as WindowButtons } from "../Media/window-buttons.svg";
 
 const VARIANT_MAPS: Record<Variant, string> = {
   DARK: "bg-secondarygrey text-codewhite",
-  LIGHT: "bg-codewhite text-primarygrey",
+  LIGHT:
+    "bg-codewhite text-primarygrey dark:bg-secondarygrey dark:text-codewhite",
 };
 
 // Header Component
