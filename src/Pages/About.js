@@ -72,7 +72,7 @@ class About extends Component {
                   <a
                     href="https://drive.google.com/file/d/1SdDLIztC9DOZ7hB5Jur1OtiyXhqxme11/view?usp=sharing"
                     target="_blank"
-                    ref="noreferrer"
+                    rel="noreferrer"
                     className="text-codeorange hover:underline"
                   >
                     <b>here</b>
@@ -90,7 +90,7 @@ class About extends Component {
             </div>
             <div className="px-8 order-1 w-full lg:order-2 flex items-center justify-center">
               <img
-                className="bg-white p-1 rounded-full  shadow-lg"
+                className="bg-codewhite p-1 rounded-full  shadow-lg"
                 src={ProfilePhoto}
                 alt="Portrait of Nathan Davenport"
               />

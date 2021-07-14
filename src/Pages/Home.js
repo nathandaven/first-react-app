@@ -34,12 +34,12 @@ class Home extends Component {
           >
             <div className="pt-10 pb:20 my-10 md:pt-10 md:pb-0 ">
               <div className="flex text-left pt-5">
-                <h2 className="text-3xl  md:text-4xl lg:text-5xl font-bold">
+                <h2 className="text-3xl  md:text-4xl lg:text-5xl font-bold text-darkgrey">
                   Hi traveler!
                 </h2>
               </div>
               <div className="flex text-left">
-                <h1 className="text-5xl md:text-7xl lg:text-9xl  font-bold">
+                <h1 className="text-5xl md:text-7xl lg:text-9xl  font-bold text-darkgrey">
                   Meet Nathan Davenport:
                 </h1>
               </div>

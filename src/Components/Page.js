@@ -3,7 +3,7 @@ import { React, Component } from "react";
 import classNames from "classnames";
 
 const VARIANT_MAPS: Record<Variant, string> = {
-  DARK: "bg-primarygrey text-codewhite",
+  DARK: "bg-primarygrey dark:bg-darkgrey text-codewhite",
   LIGHT:
     "bg-codewhitedark text-primarygrey dark:bg-primarygrey dark:text-codewhite",
   CIRCLE: "bg-circlebgfull bg-no-repeat bg-local bg-contain bg-top",

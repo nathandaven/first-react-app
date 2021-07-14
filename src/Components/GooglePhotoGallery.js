@@ -35,7 +35,7 @@ function GooglePhotosGallery() {
         infinite={true}
         autoPlay={true}
         showFullscreenButton={false}
-        slideInterval="6000"
+        slideInterval={6000}
       />
     </div>
   ) : (

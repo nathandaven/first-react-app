@@ -46,10 +46,9 @@ function GooglePhotosList(props) {
             </p>
           }
         >
-          {console.log(images)}
-          {console.log(loadedImages)}
           {loadedImages.map((src, index) => (
             <motion.div
+              key={index}
               initial="hidden"
               animate="visible"
               variants={{
@@ -70,7 +69,13 @@ function GooglePhotosList(props) {
                 className="flex flex-col text-center justify-center h-full"
                 key={index}
               >
-                <img className="py-4 w-full" src={`${src}=w1200`} alt="" />
+                <img
+                  className="py-4 w-full"
+                  src={`${src}=w1200`}
+                  alt="Retrieved from Google Photos"
+                  loading="lazy"
+                  key={index}
+                />
               </div>
             </motion.div>
           ))}

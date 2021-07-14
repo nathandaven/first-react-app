@@ -95,9 +95,9 @@ class Projects extends Component {
               <FontAwesomeIcon className="" icon={faGithub} /> Github{"  "}
             </b>{" "}
             for more >
-            <Continue />
           </a>
         </div>
+        <Continue />
       </Page>
     );
   }

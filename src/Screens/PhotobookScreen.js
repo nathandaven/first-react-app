@@ -7,7 +7,7 @@ import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
 
 function PhotobookScreen() {
-  const [currentGallery, setGallery] = React.useState("XaVbN7HVYqgGagk66");
+  const [currentGallery, setGallery] = React.useState(null);
 
   return (
     <>

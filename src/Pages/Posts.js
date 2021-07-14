@@ -1,19 +1,16 @@
 import { React, Component } from "react";
 import Page from "../Components/Page";
 import Continue from "../Components/Continue";
+import Title from "../Components/Title";
 class Posts extends Component {
   render() {
     return (
-      <Page variant="LIGHT" id="contact">
-        <h1 className="py-2">
-          <b className="text-5xl ">😄 What are you waiting for? 😄</b>
-        </h1>
-        <h4 className="py-2">
-          <b className="text-3xl">
-            <a href="mailto:nathandaven@gmail.com">nathandaven@gmail.com</a>
-          </b>
-        </h4>
-        <Continue />
+      <Page variant="DARK" id="contact">
+        <Title text="Posts">
+          <span className="text-xl">Coming soon!</span>
+        </Title>
+
+        <div></div>
       </Page>
     );
   }

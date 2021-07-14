@@ -7,6 +7,7 @@ import Projects from "../Pages/Projects";
 import Design from "../Pages/Design";
 import Photobook from "../Pages/Photobook";
 import Footer from "../Pages/Footer";
+import Posts from "../Pages/Posts";
 
 class Main extends Component {
   componentDidMount() {
@@ -24,6 +25,7 @@ class Main extends Component {
           <Projects />
           <Design />
           <Photobook />
+          <Posts />
           <Footer />
         </main>
       </>

@@ -17,7 +17,7 @@ import BlindPhoto from "../Media/blind-photo.png";
 class Design extends Component {
   render() {
     return (
-      <Page variant="LIGHT" id="design">
+      <Page variant="DARK" id="design">
         <Title text="Design" />
         <div className="pb-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-2 ">
           <DesignCard

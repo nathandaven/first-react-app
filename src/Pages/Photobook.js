@@ -27,24 +27,22 @@ class Photobook extends Component {
   render() {
     return (
       <>
-        <Page variant="DARK" id="photobook">
+        <Page variant="LIGHT" id="photobook">
           <Title text="Photobook" />
           {/* <ImageGallery items={images} /> */}
-          <Card variant="DARK">
+          <Card variant="LIGHT">
             <div className="text-center text-xl font-sans mt-4 mb-8">
               <p>
                 Still working on the gallery page for this site, so enjoy this
                 selection for now:
               </p>
             </div>
-            <GooglePhotoGallery galleryID="AF1QipPBipqXTJd7ysp4eL7sL_jFcf6ypmASLHm6RbGZ" />
-            <div className="flex justify-center hover:underline font-sans pt-4">
-              <Link to="/photobook">
-                <a>See More ></a>
-              </Link>
+            <GooglePhotoGallery />
+            <div className="flex justify-center hover:underline font-sans pt-4 text-primarygrey dark:text-codepink">
+              <Link to="/photobook">See More ></Link>
             </div>
           </Card>
-          <div className="py-1"></div>
+          <div className="py-10"></div>
         </Page>
       </>
     );

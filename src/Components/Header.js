@@ -9,6 +9,7 @@ import Socials from "./Socials";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import classNames from "classnames";
+import Switch from "./Switch";
 
 // Header Component
 class Header extends Component {
@@ -30,10 +31,10 @@ class Header extends Component {
 
   handleScroll(event) {
     let tag = "";
-    if (window.pageYOffset > 500) {
+    if (window.pageYOffset > 600) {
       tag = "text-codewhite  mix-blend-exclusion ";
     } else {
-      tag = "text-primarygrey ";
+      tag = "text-darkgrey ";
     }
     this.setState({
       color: tag,

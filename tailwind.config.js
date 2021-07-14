@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: (theme) => ({
@@ -18,6 +18,7 @@ module.exports = {
       },
       colors: {
         primarygrey: "var(--primary--grey)",
+        darkgrey: "var(--dark--grey)",
         white: "var(--white)",
         secondarygrey: "var(--secondary--grey)",
         codeyellow: "var(--codeyellow)",

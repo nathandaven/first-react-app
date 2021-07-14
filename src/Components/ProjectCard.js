@@ -61,21 +61,21 @@ class ProjectCard extends Component {
                 </h1>
                 <h2 className=" text-md">{this.props.date}</h2>
               </div>
-              <p className="py-1">{this.props.children}</p>
+              <span className="py-1">{this.props.children}</span>
             </div>
 
             <div className="pt-6 flex justify-between items-center">
               <p className="font-mono ">
                 <span className="text-codepink">export default </span>
-                <span className="text-primarygrey dark:text-codewhite underline">
+                <span className="text-primarygrey dark:text-codegreen underline">
                   Project
                 </span>
                 ;
               </p>
               <div className="text-right">
                 <button
-                  onClick={this.goToGithub}
-                  className="px-6 py-2 mx-2 my-1 rounded-md text-primarygrey text-md bg-gray-300 dark:text-codewhite bg-opacity-50 hover:bg-opacity-75 font-sans drop-shadow-md"
+                  onClick={this.goToLink}
+                  className="px-6 py-2 mx-2 my-1 rounded-md bg-gray-300 bg-opacity-50 hover:bg-opacity-75 text-primary-grey dark:bg-gray-500 dark:bg-opacity-50 dark:hover:bg-opacity-75 dark:text-codewhite text-md font-sans drop-shadow-md"
                 >
                   GitHub{" "}
                   <FontAwesomeIcon
@@ -83,7 +83,6 @@ class ProjectCard extends Component {
                     icon={faGithub}
                   />
                 </button>
-
                 <button
                   onClick={this.goToLink}
                   className="px-6 py-2 mx-2 my-1 rounded-md bg-green-600 hover:bg-green-700  text-white  text-md font-sans drop-shadow-md"

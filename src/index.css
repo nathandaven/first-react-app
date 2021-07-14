@@ -1,28 +1,34 @@
 /* Google Fonts -- Red Hat Display and Fira Code */
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
 /* COLORS */
 
 :root {
     /* Color styles */
-    --primary--grey: #1E1F1C;
-    --white: #FFFFFF;
+    --primary--grey: #1e1f1c;
+    --dark--grey: #171815;
+    --white: #ffffff;
     --secondary--grey: #272822;
-    --codeyellow: #E6DB74;
-    --codesand: #CF9F74;
-    --codemustard: #E6B422;
-    --codegreen: #A6E22E;
-    --codeblue: #66D9EF;
-    --codewhite: #EAEAE5;
-    --codewhitedark: #DCDCD6;
-    --codepink: #E8236A;
-    --codeorange: #FD971F;
+    --codeyellow: #e6db74;
+    --codesand: #cf9f74;
+    --codemustard: #e6b422;
+    --codegreen: #a6e22e;
+    --codeblue: #66d9ef;
+    --codewhite: #eaeae5;
+    --codewhitedark: #dcdcd6;
+    --codepink: #e8236a;
+    --codeorange: #fd971f;
     /* Text-size styles */
     /* base size: default--text (18px) */
     --default--text: 1rem;
     /* Effect styles */
     --card-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+html,
+body {
+    transition: background 2s;
 }
 
 
