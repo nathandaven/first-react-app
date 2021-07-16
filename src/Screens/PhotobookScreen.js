@@ -73,8 +73,9 @@ function PhotobookScreen() {
             </div>
           </motion.div>
           <div className=""></div>
-          <GooglePhotoList galleryID={currentGallery} />{" "}
+          <GooglePhotoList galleryID={currentGallery} />
         </Page>
+        <Footer />
       </main>
     </>
   );
