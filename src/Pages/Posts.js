@@ -7,6 +7,9 @@ import Card from "../Components/Card";
 // Contentful
 import documentToReactComponents from "@contentful/rich-text-react-renderer";
 
+const SPACE_ID = "beruqf6cwvuf";
+const SECRET = process.env.REACT_APP_CONTENTFUL_SECRET;
+
 // From contentful tool
 const query = `
 {
@@ -49,16 +52,19 @@ function Posts() {
 
   React.useEffect(() => {
     window
-      .fetch(`https://graphql.contentful.com/content/v1/spaces/beruqf6cwvuf/`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          // Authenticate the request
-          Authorization: "Bearer PaAlZ8Lk6fYxrDwKKmm8qDgHbYYF5WQiV0l9EQvmuf4",
-        },
-        // send the GraphQL query
-        body: JSON.stringify({ query }),
-      })
+      .fetch(
+        `https://graphql.contentful.com/content/v1/spaces/`.concat(SPACE_ID),
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            // Authenticate the request
+            Authorization: "Bearer ".concat(SECRET),
+          },
+          // send the GraphQL query
+          body: JSON.stringify({ query }),
+        }
+      )
       .then((response) => response.json())
       .then(({ data, errors }) => {
         if (errors) {
@@ -66,12 +72,18 @@ function Posts() {
         }
 
         // rerender the entire component with new data
-        setPosts(data.pageCollection.items);
+        if (data) setPosts(data.pageCollection.items);
       });
   }, []);
 
   if (!posts) {
-    return "Loading...";
+    return (
+      <Page variant="DARK">
+        <p className="flex justify-center w-full text-2xl text-codewhite">
+          Loading...
+        </p>
+      </Page>
+    );
   }
 
   return (
@@ -81,20 +93,18 @@ function Posts() {
       </Title>
 
       {posts.map((post) => (
-        <>
-          <Card variant="DARK">
-            <h1 className="text-4xl font-sans py-4">
-              <b>{post.title}</b>
-            </h1>
-            <img
-              src={post.logo.url}
-              className="rounded drop-shadow-md"
-              alt={post.logo.description}
-            />
-            {/* {documentToReactComponents(document)} */}
-            {/* // -> <p><b>Hello</b><u> world!</u></p> */}
-          </Card>
-        </>
+        <Card variant="DARK" key={post.title.toString()}>
+          <h1 className="text-4xl font-sans py-4">
+            <b>{post.title}</b>
+          </h1>
+          <img
+            src={post.logo.url}
+            className="rounded drop-shadow-md"
+            alt={post.logo.description}
+          />
+          {/* {documentToReactComponents(document)} */}
+          {/* // -> <p><b>Hello</b><u> world!</u></p> */}
+        </Card>
       ))}
 
       <div></div>
