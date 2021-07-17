@@ -13,6 +13,7 @@ import PhotobookScreen from "./Screens/PhotobookScreen";
 // Media
 import { ReactComponent as CircleBG } from "./Media/circlebg-full.svg";
 import Switch from "./Components/Switch";
+import PostsScreen from "./Screens/PostsScreen";
 
 function App() {
   React.useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
         <Router>
           <Route exact path="/" component={MainScreen} />
           <Route exact path="/photobook" component={PhotobookScreen} />
+          <Route exact path="/posts" component={PostsScreen} />
         </Router>
       </div>
       <div className="fixed bottom-10 flex w-full justify-end pr-10 drop-shadow-lg">

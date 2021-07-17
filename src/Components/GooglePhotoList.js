@@ -17,6 +17,16 @@ function GooglePhotosList(props) {
       const response = await axios.get(
         "https://simple-vine-knife.glitch.me/" + props.galleryID
       );
+      /*       const response = await fetch(
+        "https://simple-vine-knife.glitch.me/" + props.galleryID,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      ); */
+
       if (!shouldCancel && response.data && response.data.length > 0) {
         setImages(response.data);
         setLoadedImages(response.data.splice(0, 4));
