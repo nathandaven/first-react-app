@@ -9,6 +9,8 @@ import Socials from "./Socials";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import classNames from "classnames";
 
+import { HashLink } from "react-router-hash-link";
+
 // Header Component
 class PhotobookHeader extends Component {
   constructor(props) {
@@ -52,29 +54,43 @@ class PhotobookHeader extends Component {
           {/* Logo / title */}
           <div className="flex-1 text-left  ">
             <div className="flex-1 flex ">
-              <Link
-                to="/"
+              <button
+                onClick={() => {
+                  window.history.back();
+                }}
                 className="text-left text-xl transform hover:scale-110"
               >
-                {"<"} back
-              </Link>
+                <span className="text-lg">{"<"}</span> back
+              </button>
             </div>
           </div>
 
           {/* Sections */}
-          <div className="flex-1 flex flex-auto hidden md:contents">
-            <Link
+          <div className="flex-1 flex flex-auto">
+            <HashLink
               smooth
-              to="/"
+              to="/#home"
               className="flex-1 flex-auto text-center transform hover:scale-110"
             >
-              {/* Link */}
+              About
+            </HashLink>
+            <Link
+              to="/photobook"
+              className="flex-1 flex-auto text-center transform hover:scale-110"
+            >
+              Photobook
+            </Link>
+            <Link
+              to="/posts"
+              className="flex-1 flex-auto text-center transform hover:scale-110"
+            >
+              Blog
             </Link>
           </div>
 
           {/* Social Icons */}
           <div className="flex-1 text-right hidden md:contents">
-            {/* <Socials /> */}
+            <Socials />
           </div>
         </nav>
       </header>

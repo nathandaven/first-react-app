@@ -28,7 +28,7 @@ function PostContent(props) {
     };
   }, []);
 
-  if (!posts) {
+  if (!posts || !props.posts.fields) {
     return (
       <p className="flex justify-center w-full text-2xl text-codewhite">
         Loading...

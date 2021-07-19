@@ -101,7 +101,7 @@ class Design extends Component {
             </p>
           </DesignCard>
         </div>
-        <Continue />
+        {/* <Continue /> */}
       </Page>
     );
   }

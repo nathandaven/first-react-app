@@ -13,6 +13,8 @@ import RichContent from "../Components/RichContent";
 import PostContent from "../Components/PostContent";
 import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
+import { Link, Route } from "react-router-dom";
+import PostDetailScreen from "./PostDetailScreen";
 
 const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
@@ -81,9 +83,29 @@ function PostsScreen() {
             </div>
           </motion.div>
           {posts.map((post) => (
-            <div className="text-left">
-              <PostContent post={post} />
-            </div>
+            <Card variant="LIGHT" key={post.fields.title.toString()}>
+              <div className="flex justify-between py-6">
+                <div className="text-left font-sans">
+                  <h1 className="text-2xl">
+                    <b>{post.fields.title}</b>
+                  </h1>
+                </div>
+                <button className="px-6 py-2 mx-2 my-1 rounded-md bg-green-600 hover:bg-green-700  text-white  text-md font-sans drop-shadow-md">
+                  {/* <Route
+                    exact
+                    path={"/posts/" + post.fields.title}
+                    component={PostDetailScreen(post)}
+                  /> */}
+                  <Link
+                    to={"/posts/" + post.fields.title}
+                    post={post}
+                    title={post.fields.title}
+                  >
+                    Read More >
+                  </Link>
+                </button>
+              </div>
+            </Card>
           ))}
           <div className=""></div>
         </Page>

@@ -24,8 +24,8 @@ class Main extends Component {
           <About />
           <Projects />
           <Design />
-          <Photobook />
-          <Posts />
+          {/* <Photobook /> */}
+          {/* <Posts /> */}
           <Footer />
         </main>
       </>
