@@ -9,23 +9,30 @@ import Socials from "./Socials";
 import { HashLink } from "react-router-hash-link";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import Switch from "./Switch";
 
 // Header Component
 function Header(props) {
   const [color, setColor] = React.useState(0);
 
   React.useEffect(() => {
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
   }, []);
 
   function handleScroll(event) {
-    let tag = "";
-    if (window.pageYOffset > 600) {
-      tag = "text-codewhite  mix-blend-exclusion ";
+    if (props.isHomePage === true) {
+      console.log(props.isHomePage);
+      let tag = "";
+      if (window.pageYOffset > 600) {
+        tag = "text-codewhite  mix-blend-exclusion ";
+      } else {
+        tag = " text-darkgrey";
+      }
+      setColor(tag);
     } else {
-      tag = "text-darkgrey ";
+      setColor("text-codewhite dark:text-codewhite  mix-blend-exclusion ");
     }
-    setColor(tag);
   }
 
   return (

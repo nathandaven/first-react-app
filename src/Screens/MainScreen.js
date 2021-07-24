@@ -15,7 +15,7 @@ class Main extends Component {
   render() {
     return (
       <>
-        <Header />
+        <Header isHomePage={true} />
 
         <main className="w-full ml-auto" role="main">
           <Home />

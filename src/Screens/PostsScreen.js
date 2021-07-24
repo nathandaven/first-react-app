@@ -52,6 +52,27 @@ function PostsScreen() {
     );
   }
 
+  if (posts.length === 0) {
+    return (
+      <main
+        className="w-full ml-auto text-primarygrey dark:text-codewhite"
+        role="main"
+      >
+        <Header />
+        <Page variant="LIGHT">
+          <div className="w-full font-sans text-center">
+            <p className="pb-3">No posts at this time! Check back later :)</p>
+            <Link to="/">
+              <p className="pt-3 transform hover:scale-110">
+                <b>Back to home ></b>
+              </p>
+            </Link>
+          </div>
+        </Page>
+      </main>
+    );
+  }
+
   function formatDate(date) {
     date = new Date(date);
     return dateFormat(date, "fullDate");
@@ -85,9 +106,9 @@ function PostsScreen() {
           >
             <div className="my-20 w-full text-left">
               <h1 className="text-4xl pb-10">
-                <b>Posts.</b>
+                <b>Check out my most recent posts!</b>
               </h1>
-              <h4 className="py-2 text-2xl">Pick my brain for a bit!</h4>
+              <h4 className="py-2 text-2xl">Pick my brain for a bit:</h4>
             </div>
           </motion.div>
           {posts.map((post) => (

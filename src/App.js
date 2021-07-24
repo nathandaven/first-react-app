@@ -8,6 +8,7 @@ import PhotobookScreen from "./Screens/PhotobookScreen";
 // Media
 import PostsScreen from "./Screens/PostsScreen";
 import PostDetailScreen from "./Screens/PostDetailScreen";
+import Switch from "./Components/Switch";
 
 function App() {
   React.useEffect(() => {
@@ -39,6 +40,9 @@ function App() {
             )}
           />
         </Router>
+        <div className="fixed bottom-7 right-3 left-7">
+          <Switch />
+        </div>
       </div>
       {/* <div className="fixed bottom-10 flex w-full justify-end pr-10 drop-shadow-lg"></div> */}
     </>

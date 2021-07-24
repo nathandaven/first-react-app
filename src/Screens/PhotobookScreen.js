@@ -38,7 +38,7 @@ function PhotobookScreen() {
             <div className="my-20 text-left">
               <div className=" w-full md:w-3/4">
                 <h1 className="text-4xl pb-10">
-                  Welcome to my <b>Photobook.</b>
+                  Welcome to my <b>Photobook!</b>
                 </h1>
                 <h4 className="py-2 text-2xl">Select an album:</h4>
               </div>

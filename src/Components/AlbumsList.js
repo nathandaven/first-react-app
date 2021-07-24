@@ -1,6 +1,7 @@
 // React
 import React from "react";
 import { createClient } from "contentful";
+import { Link } from "react-router-dom";
 
 const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
@@ -31,6 +32,19 @@ function AlbumsList(props) {
 
   function updateCurrentAlbum(id) {
     props.setGallery(id);
+  }
+
+  if (contentfulAlbums.length === 0) {
+    return (
+      <div className="w-full font-sans text-left">
+        <p className="pb-3">No albums at this time! Check back later :)</p>
+        <Link to="/">
+          <p className="pt-3 transform hover:scale-110">
+            <b>Back to home ></b>
+          </p>
+        </Link>
+      </div>
+    );
   }
 
   // Header Component
