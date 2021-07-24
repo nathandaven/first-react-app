@@ -4,13 +4,13 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <footer className="w-full bg-codewhite text-primarygrey dark:bg-secondarygrey dark:text-codewhite pt-8 pb-4">
-          <div className="container mx-auto px-4 xl:px-40 items-center h-16 ">
+        <footer className="w-full bg-codewhite text-primarygrey dark:bg-secondarygrey dark:text-codewhite ">
+          <div className="container mx-auto px-4 xl:px-40 items-center py-8  md:pb-0">
             <div className="flex justify-between  text-left">
               <b className="">Nathan Davenport</b>
               <Socials />
             </div>
-            <div className="flex justify-between  text-left">
+            <div className="flex justify-between  text-left h-16 ">
               <p className="text-sm w-1/2">
                 {" "}
                 Built using{" "}

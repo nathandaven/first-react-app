@@ -9,7 +9,6 @@ import Socials from "./Socials";
 import { HashLink } from "react-router-hash-link";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import Switch from "./Switch";
 
 // Header Component
 function Header(props) {
@@ -22,7 +21,6 @@ function Header(props) {
 
   function handleScroll(event) {
     if (props.isHomePage === true) {
-      console.log(props.isHomePage);
       let tag = "";
       if (window.pageYOffset > 600) {
         tag = "text-codewhite  mix-blend-exclusion ";
@@ -61,10 +59,10 @@ function Header(props) {
         <div className="flex-1 flex flex-auto">
           <HashLink
             smooth
-            to="/#about"
+            to="/#home"
             className="flex-1 flex-auto text-center transform hover:scale-110"
           >
-            About
+            Home
           </HashLink>
           <Link
             to="/photobook"

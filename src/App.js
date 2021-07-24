@@ -40,7 +40,7 @@ function App() {
             )}
           />
         </Router>
-        <div className="fixed bottom-7 right-3 left-7">
+        <div className="fixed bottom-10 right-4 md:right-8">
           <Switch />
         </div>
       </div>
