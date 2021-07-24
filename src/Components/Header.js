@@ -6,10 +6,8 @@ import Socials from "./Socials";
 // Media and Icons
 
 // React Router
-import { BrowserRouter as Router } from "react-router-dom";
-import { HashLink as HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import classNames from "classnames";
-import Switch from "./Switch";
 import { Link } from "react-router-dom";
 
 // Header Component

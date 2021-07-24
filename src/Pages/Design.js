@@ -1,10 +1,7 @@
 import { React, Component } from "react";
 import Page from "../Components/Page";
-import Card from "../Components/Card";
 import Title from "../Components/Title";
-import ProjectCard from "../Components/ProjectCard";
 import DesignCard from "../Components/DesignCard";
-import Continue from "../Components/Continue";
 
 //Media
 import GWPhoto from "../Media/gw-site-photo.png";

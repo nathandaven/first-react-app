@@ -1,6 +1,4 @@
 import { React, Component } from "react";
-import Page from "../Components/Page";
-import Continue from "../Components/Continue";
 import Socials from "../Components/Socials";
 class Footer extends Component {
   render() {

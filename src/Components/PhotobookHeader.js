@@ -6,10 +6,7 @@ import Socials from "./Socials";
 // Media and Icons
 
 // React Router
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import classNames from "classnames";
-
-import { HashLink } from "react-router-hash-link";
 
 // Header Component
 class PhotobookHeader extends Component {

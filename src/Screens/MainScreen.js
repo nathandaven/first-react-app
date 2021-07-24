@@ -5,9 +5,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Projects from "../Pages/Projects";
 import Design from "../Pages/Design";
-import Photobook from "../Pages/Photobook";
 import Footer from "../Pages/Footer";
-import Posts from "../Pages/Posts";
 
 class Main extends Component {
   componentDidMount() {

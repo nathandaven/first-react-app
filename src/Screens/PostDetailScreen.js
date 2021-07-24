@@ -1,16 +1,10 @@
 import React from "react";
 import PhotobookHeader from "../Components/PhotobookHeader";
 import Page from "../Components/Page";
-import Continue from "../Components/Continue";
-import Title from "../Components/Title";
-import Card from "../Components/Card";
 
 // Contentful
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { createClient } from "contentful";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import RichContent from "../Components/RichContent";
-import PostContent from "../Components/PostContent";
 import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
 

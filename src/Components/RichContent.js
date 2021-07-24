@@ -1,8 +1,7 @@
 // React
-import { React, Component } from "react";
+import React from "react";
 // Contentful
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { createClient } from "contentful";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 
 const options = {

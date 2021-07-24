@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../Components/Header";
 import Page from "../Components/Page";
 import GooglePhotoList from "../Components/GooglePhotoList";
-import { Link } from "react-router-dom";
 import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
+import AlbumsList from "../Components/AlbumsList";
 
 function PhotobookScreen() {
   const [currentGallery, setGallery] = React.useState(null);
@@ -35,40 +35,16 @@ function PhotobookScreen() {
               },
             }}
           >
-            <div className="my-20 w-full md:w-3/4 text-left">
-              <h1 className="text-4xl pb-10">
-                Welcome to my <b>Photobook.</b>
-              </h1>
-              <h4 className="py-2 text-2xl">Select an album:</h4>
-              <div className="flex flex-col sm:flex-row justify-between py-10">
-                <button
-                  onClick={() => setGallery("XaVbN7HVYqgGagk66")}
-                  className="text-left transform focus:scale-105"
-                >
-                  Random Selections
-                </button>
+            <div className="my-20 text-left">
+              <div className=" w-full md:w-3/4">
+                <h1 className="text-4xl pb-10">
+                  Welcome to my <b>Photobook.</b>
+                </h1>
+                <h4 className="py-2 text-2xl">Select an album:</h4>
+              </div>
 
-                <button
-                  onClick={() => setGallery("jA3ZRcm7KYxdYJe96")}
-                  className="text-left transform focus:scale-105"
-                >
-                  December 2020
-                </button>
-
-                <button
-                  onClick={() => setGallery("")}
-                  className="text-left transform focus:scale-110"
-                ></button>
-
-                <button
-                  onClick={() => setGallery("")}
-                  className="text-left transform hover:scale-110"
-                ></button>
-
-                <button
-                  onClick={() => setGallery("")}
-                  className="text-left transform hover:scale-110"
-                ></button>
+              <div className="flex flex-col md:flex-row justify-between py-10">
+                <AlbumsList setGallery={setGallery} />
               </div>
             </div>
           </motion.div>
