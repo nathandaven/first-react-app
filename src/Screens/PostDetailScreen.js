@@ -14,7 +14,42 @@ import PostContent from "../Components/PostContent";
 import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
 
+const client = createClient({
+  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.REACT_APP_CONTENTFUL_SECRET,
+});
+
 function PostDetailScreen(props) {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    let shouldCancel = false;
+    const call = async () => {
+      const response = await client.getEntries({
+        content_type: "page",
+        "fields.slug[match]": props.match.params.slug,
+      });
+      if (!shouldCancel && response) {
+        console.log(response.items);
+        setData(response.items[0].fields);
+      }
+    };
+    call();
+    return () => {
+      shouldCancel = true;
+    };
+  }, []);
+
+  if (!data) {
+    return (
+      <Page variant="LIGHT">
+        <p className="flex justify-center w-full text-2xl text-codewhite">
+          Loading...
+        </p>
+      </Page>
+    );
+  }
+
   return (
     <>
       <main
@@ -41,17 +76,24 @@ function PostDetailScreen(props) {
               },
             }}
           >
-            <div className="my-20 w-full md:w-3/4 text-left">
-              <h1 className="text-4xl pb-10">
-                <b>Post.</b>
+            <img
+              className="rounded-lg shadow-lg"
+              src={data.logo.fields.file.url}
+              alt="Post logo"
+            />
+            <div className="my-10 w-full text-left">
+              <h1 className="text-6xl pb-5">
+                <b>{data.title}</b>
               </h1>
               <h4 className="py-2 text-2xl">Bada bing</h4>
             </div>
           </motion.div>
 
-          <PostContent post={props.post} />
+          <div className="text-left">
+            <RichContent content={data.content} />
+          </div>
 
-          <div className=""></div>
+          <div className="pt-20"></div>
         </Page>
         <Footer />
       </main>

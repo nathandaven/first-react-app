@@ -66,27 +66,7 @@ class PhotobookHeader extends Component {
           </div>
 
           {/* Sections */}
-          <div className="flex-1 flex flex-auto">
-            <HashLink
-              smooth
-              to="/#home"
-              className="flex-1 flex-auto text-center transform hover:scale-110"
-            >
-              About
-            </HashLink>
-            <Link
-              to="/photobook"
-              className="flex-1 flex-auto text-center transform hover:scale-110"
-            >
-              Photobook
-            </Link>
-            <Link
-              to="/posts"
-              className="flex-1 flex-auto text-center transform hover:scale-110"
-            >
-              Blog
-            </Link>
-          </div>
+          <div className="flex-1 flex flex-auto"></div>
 
           {/* Social Icons */}
           <div className="flex-1 text-right hidden md:contents">

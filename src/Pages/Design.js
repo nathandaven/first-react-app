@@ -24,7 +24,7 @@ class Design extends Component {
             title="Macon-Bibb County Tax"
             date="May 2021"
             photo={MaconBibbPhoto}
-            link="http://www.govtwindow.net/"
+            link="http://www.maconbibbtax.us/"
           >
             <p>
               One of the sites I developed through my internship at Government

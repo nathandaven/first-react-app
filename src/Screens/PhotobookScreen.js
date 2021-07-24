@@ -1,5 +1,5 @@
 import React from "react";
-import PhotobookHeader from "../Components/PhotobookHeader";
+import Header from "../Components/Header";
 import Page from "../Components/Page";
 import GooglePhotoList from "../Components/GooglePhotoList";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ function PhotobookScreen() {
         className="w-full ml-auto text-primarygrey dark:text-codewhite"
         role="main"
       >
-        <PhotobookHeader />
+        <Header />
         <Page>
           <div className="my-20"></div>
           <motion.div

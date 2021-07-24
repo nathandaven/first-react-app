@@ -39,6 +39,12 @@ function App() {
           <Route exact path="/" component={MainScreen} />
           <Route exact path="/photobook" component={PhotobookScreen} />
           <Route exact path="/posts" component={PostsScreen} />
+          <Route
+            path="/posts/:slug"
+            component={(props) => (
+              <PostDetailScreen post={props.post} {...props} />
+            )}
+          />
         </Router>
       </div>
       {/* <div className="fixed bottom-10 flex w-full justify-end pr-10 drop-shadow-lg"></div> */}

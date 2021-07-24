@@ -6,8 +6,8 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <footer className=" bg-codewhite text-primarygrey dark:bg-secondarygrey dark:text-codewhite  py-8 px-8 sm:px-0">
-          <div className="container  mx-auto xl:px-40 ">
+        <footer className="w-full bg-codewhite text-primarygrey dark:bg-secondarygrey dark:text-codewhite pt-8 pb-4">
+          <div className="container mx-auto px-4 xl:px-40 items-center h-16 ">
             <div className="flex justify-between  text-left">
               <b className="">Nathan Davenport</b>
               <Socials />

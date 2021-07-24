@@ -56,7 +56,7 @@ function Header(props) {
         <div className="flex-1 flex flex-auto">
           <HashLink
             smooth
-            to="/#home"
+            to="/#about"
             className="flex-1 flex-auto text-center transform hover:scale-110"
           >
             About
