@@ -18,8 +18,12 @@ class Footer extends Component {
                   React JS
                 </a>
                 ,{" "}
-                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                  Contentful API
+                <a
+                  href="https://www.contentful.com/developers/docs/references/content-delivery-api/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Contentful Client API
                 </a>
                 ,{" "}
                 <a
