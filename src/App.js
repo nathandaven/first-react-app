@@ -40,9 +40,7 @@ function App() {
             )}
           />
         </Router>
-        <div className="fixed bottom-10 right-4 md:right-8">
-          <Switch />
-        </div>
+        <div className="fixed bottom-10 right-4 md:right-8"></div>
       </div>
       {/* <div className="fixed bottom-10 flex w-full justify-end pr-10 drop-shadow-lg"></div> */}
     </>
