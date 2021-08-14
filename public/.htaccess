@@ -5,4 +5,4 @@ RewriteRule ^ - [L]
 
 RewriteRule ^ /index.html [L] 
 
-Header set Access-Control-Allow-Origin "https://simple-vine-knife.glitch.me/null"
+Header set Access-Control-Allow-Origin "https://simple-vine-knife.glitch.me"
