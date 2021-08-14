@@ -30,13 +30,10 @@ function App() {
     ) {
       localStorage.theme = "dark";
       setDark(true);
-      console.log(isDark);
       document.documentElement.classList.add("dark");
     } else {
       localStorage.theme = "light";
       setDark(false);
-
-      console.log(isDark);
       document.documentElement.classList.remove("dark");
     }
   }, []);
