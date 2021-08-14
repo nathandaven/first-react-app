@@ -79,11 +79,11 @@ function PostDetailScreen(props) {
               <h1 className="text-6xl pb-5">
                 <b>{data.title}</b>
               </h1>
-              <h4 className="py-2 text-2xl">Bada bing</h4>
+              <h4 className="py-2 text-2xl">{data.description}</h4>
             </div>
           </motion.div>
 
-          <div className="text-left">
+          <div className="container text-left ">
             <RichContent content={data.content} />
           </div>
 

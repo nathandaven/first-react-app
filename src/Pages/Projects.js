@@ -56,7 +56,7 @@ class Projects extends Component {
             date="Spring 2021"
             photo={RayTracerPhoto}
             github="https://github.com/nathandaven/jsRayTracer"
-            link="https://github.com/nathandaven/jsRayTracer"
+            link="https://nathandaven.github.io/jsRayTracer/"
           >
             <p>
               This is my Ray Tracer project for CS 3451 Computer Graphics at
