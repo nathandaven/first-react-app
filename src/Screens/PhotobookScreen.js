@@ -6,16 +6,48 @@ import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
 import AlbumsList from "../Components/AlbumsList";
 
+import Helmet from "react-helmet";
+
 function PhotobookScreen() {
   const [currentGallery, setGallery] = React.useState(null);
 
   return (
     <>
+      <Helmet>
+        <title>Photobook | Nathan Davenport's Portfolio</title>
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Photobook | Nathan Davenport's Portfolio"
+        />
+        <meta
+          property="og:image"
+          content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+        />
+        <meta
+          property="og:site_name"
+          content="Photobook | Nathan Davenport's Portfolio"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Photobook | Nathan Davenport's Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Nathan Davenport is an aspiring front-end developer, UI/UX designer, and Georgia Tech student located in Midtown, Atlanta."
+        />
+        <meta
+          name="twitter:image"
+          content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+        />
+      </Helmet>
       <main
         className="w-full ml-auto text-primarygrey dark:text-codewhite"
         role="main"
       >
-        <Header />
+        <Header solid={true} />
         <Page>
           <div className="my-20"></div>
           <motion.div

@@ -13,6 +13,8 @@ import { Link } from "react-router-dom";
 
 import dateFormat from "dateformat";
 
+import Helmet from "react-helmet";
+
 const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
   accessToken: process.env.REACT_APP_CONTENTFUL_SECRET,
@@ -26,7 +28,6 @@ function PostsScreen() {
     const call = async () => {
       const response = await client.getEntries({ content_type: "page" });
       if (!shouldCancel && response) {
-        console.log(response.items);
         setPosts(response.items);
       }
     };
@@ -42,7 +43,7 @@ function PostsScreen() {
         className="w-full ml-auto text-primarygrey dark:text-codewhite"
         role="main"
       >
-        <Header />
+        <Header solid={true} />
         <Page variant="LIGHT">
           {/* <p className="flex justify-center w-full text-2xl text-codewhite">
           Loading...
@@ -54,22 +55,54 @@ function PostsScreen() {
 
   if (posts.length === 0) {
     return (
-      <main
-        className="w-full ml-auto text-primarygrey dark:text-codewhite"
-        role="main"
-      >
-        <Header />
-        <Page variant="LIGHT">
-          <div className="w-full font-sans text-center">
-            <p className="pb-3">No posts at this time! Check back later :)</p>
-            <Link to="/">
-              <p className="pt-3 transform hover:scale-110">
-                <b>Back to home ></b>
-              </p>
-            </Link>
-          </div>
-        </Page>
-      </main>
+      <>
+        <Helmet>
+          <title>Posts | Nathan Davenport's Portfolio</title>
+
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:title"
+            content="Posts | Nathan Davenport's Portfolio"
+          />
+          <meta
+            property="og:image"
+            content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+          />
+          <meta
+            property="og:site_name"
+            content="Posts | Nathan Davenport's Portfolio"
+          />
+
+          <meta
+            name="twitter:title"
+            content="Posts | Nathan Davenport's Portfolio"
+          />
+          <meta
+            name="twitter:description"
+            content="Nathan Davenport is an aspiring front-end developer, UI/UX designer, and Georgia Tech student located in Midtown, Atlanta."
+          />
+          <meta
+            name="twitter:image"
+            content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+          />
+        </Helmet>
+        <main
+          className="w-full ml-auto text-primarygrey dark:text-codewhite"
+          role="main"
+        >
+          <Header solid={true} />
+          <Page variant="LIGHT">
+            <div className="w-full font-sans text-center">
+              <p className="pb-3">No posts at this time! Check back later :)</p>
+              <Link to="/">
+                <p className="pt-3 transform hover:scale-110">
+                  <b>Back to home ></b>
+                </p>
+              </Link>
+            </div>
+          </Page>
+        </main>
+      </>
     );
   }
 
@@ -80,11 +113,41 @@ function PostsScreen() {
 
   return (
     <>
+      <Helmet>
+        <title>Posts | Nathan Davenport's Portfolio</title>
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Posts | Nathan Davenport's Portfolio"
+        />
+        <meta
+          property="og:image"
+          content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+        />
+        <meta
+          property="og:site_name"
+          content="Posts | Nathan Davenport's Portfolio"
+        />
+
+        <meta
+          name="twitter:title"
+          content="Posts | Nathan Davenport's Portfolio"
+        />
+        <meta
+          name="twitter:description"
+          content="Nathan Davenport is an aspiring front-end developer, UI/UX designer, and Georgia Tech student located in Midtown, Atlanta."
+        />
+        <meta
+          name="twitter:image"
+          content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+        />
+      </Helmet>
       <main
         className="w-full ml-auto bg-codewhitedark dark:bg-primarygrey text-primarygrey dark:text-codewhite"
         role="main"
       >
-        <Header />
+        <Header solid={true} />
         <Page>
           <div className="my-20"></div>
           <motion.div

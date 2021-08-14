@@ -24,7 +24,6 @@ function Posts() {
     const call = async () => {
       const response = await client.getEntries({ content_type: "page" });
       if (!shouldCancel && response) {
-        console.log(response.items);
         setPosts(response.items);
       }
     };

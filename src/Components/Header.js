@@ -37,7 +37,8 @@ function Header(props) {
     <header
       className={classNames(
         "fixed top-0 left-0 right-0 z-50 justify-center items-center",
-        color
+        props.solid ? "" : color,
+        props.solid ? "bg-codewhite dark:bg-darkgrey shadow-md" : ""
       )}
     >
       {/* bg-codewhite shadow-md */}

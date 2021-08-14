@@ -16,7 +16,6 @@ function AlbumsList(props) {
     const call = async () => {
       const response = await client.getEntries({ content_type: "album" });
       if (!shouldCancel && response) {
-        console.log(response.items);
         setContentfulAlbums(response.items);
       }
     };
@@ -57,7 +56,6 @@ function AlbumsList(props) {
           key={album.fields.slug}
         >
           {album.fields.title}
-          {console.log(contentfulAlbums)}
         </button>
       ))}
     </>

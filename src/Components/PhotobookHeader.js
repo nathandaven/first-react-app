@@ -7,7 +7,9 @@ import Socials from "./Socials";
 
 // React Router
 import classNames from "classnames";
+import { Route, Link } from "react-router-dom/cjs/react-router-dom.min";
 
+import Helmet from "react-helmet";
 // Header Component
 class PhotobookHeader extends Component {
   constructor(props) {
@@ -52,12 +54,12 @@ class PhotobookHeader extends Component {
           <div className="flex-1 text-left  ">
             <div className="flex-1 flex ">
               <button
-                onClick={() => {
-                  window.history.back();
-                }}
+                onClick={() => {}}
                 className="text-left text-xl transform hover:scale-110"
               >
-                <span className="text-lg">{"<"}</span> back
+                <Link to="/posts">
+                  <span className="text-lg">{"<"}</span> back
+                </Link>
               </button>
             </div>
           </div>

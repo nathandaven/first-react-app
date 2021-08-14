@@ -3,6 +3,8 @@ import React from "react";
 
 import "./Switch.css";
 
+import Helmet from "react-helmet";
+
 // Header Component
 function Switch(props) {
   const [active, setActive] = React.useState(
@@ -28,15 +30,20 @@ function Switch(props) {
   }, [active]);
 
   return (
-    <label className="switch" htmlFor="checkbox">
-      <input
-        type="checkbox"
-        checked={active}
-        onChange={toggleDarkMode}
-        id="checkbox"
-      />
-      <div className="slider round"></div>
-    </label>
+    <>
+      <Helmet>
+        <meta name="theme-color" content={active ? "#171815" : "#eaeae5"} />
+      </Helmet>
+      <label className="switch" htmlFor="checkbox">
+        <input
+          type="checkbox"
+          checked={active}
+          onChange={toggleDarkMode}
+          id="checkbox"
+        />
+        <div className="slider round"></div>
+      </label>
+    </>
   );
 }
 

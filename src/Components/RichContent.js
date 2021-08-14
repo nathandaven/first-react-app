@@ -52,11 +52,21 @@ const options = {
       <h1 className="py-4 font-sans text-xl">{children}</h1>
     ),
     [BLOCKS.QUOTE]: (node, children) => (
-      <div className="text-lg bg-codewhitedark rounded-lg shadow-md px-6 py-6 my-4">{children}</div>
+      <div className="text-lg bg-codewhitedark dark:bg-secondarygrey rounded-lg shadow-md px-6 py-6 my-4">
+        {children}
+      </div>
     ),
     [INLINES.HYPERLINK]: (node, children) => {
-
-      return<a className="hover:underline break-all" href={node.data.uri} target="_blank" rel="noreferrer">{children}</a>;
+      return (
+        <a
+          className="hover:underline break-all"
+          href={node.data.uri}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {children}
+        </a>
+      );
     },
   },
   [BLOCKS.EMBEDDED_ASSET]: (node, children) => {

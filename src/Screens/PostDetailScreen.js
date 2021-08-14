@@ -8,6 +8,8 @@ import RichContent from "../Components/RichContent";
 import Footer from "../Pages/Footer";
 import { motion } from "framer-motion";
 
+import Helmet from "react-helmet";
+
 const client = createClient({
   space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
   accessToken: process.env.REACT_APP_CONTENTFUL_SECRET,
@@ -24,7 +26,6 @@ function PostDetailScreen(props) {
         "fields.slug[match]": props.match.params.slug,
       });
       if (!shouldCancel && response) {
-        console.log(response.items);
         setData(response.items[0].fields);
       }
     };
@@ -46,6 +47,34 @@ function PostDetailScreen(props) {
 
   return (
     <>
+      <Helmet>
+        <title>{data.title} | Nathan Davenport's Portfolio</title>
+        <meta name="description" content={data.description} />
+
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:title"
+          content={data.title + " | Nathan Davenport's Portfolio"}
+        />
+        <meta property="og:description" content={data.description} />
+        <meta
+          property="og:image"
+          content="https://nathandaven.com/static/media/profile.ee3ff26a.jpeg"
+        />
+        <meta
+          property="og:site_name"
+          content={data.title + " | Nathan Davenport's Portfolio"}
+        />
+
+        <meta
+          name="twitter:title"
+          content={data.title + " | Nathan Davenport's Portfolio"}
+        />
+        <meta name="twitter:description" content={data.description} />
+        <meta name="twitter:image" content={data.logo.fields.file.url} />
+        <meta name="twitter:site" content="@nathandaven" />
+        <meta name="twitter:creator" content="@nathandaven" />
+      </Helmet>
       <main
         className="w-full ml-auto text-primarygrey dark:text-codewhite"
         role="main"
