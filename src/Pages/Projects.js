@@ -28,12 +28,12 @@ class Projects extends Component {
             date="Fall 2020"
             photo={TravelerPhoto}
             github="https://github.com/nathandaven/traveller-gba"
-            link="https://github.com/nathandaven/traveller-gba"
+            link="https://gba.ninja/?autorun=https://nathandaven.com/traveller-quest-for-mead.gba&exclusive"
           >
             <p>
               My final project for CS 2261 at Georgia Tech. A top down and
               side-scrolling RPG built in C and assembly for the Game Boy
-              Advance, using all original art and designs.
+              Advance. Click details to play in the browser!
             </p>
           </ProjectCard>
 
