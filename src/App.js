@@ -64,7 +64,7 @@ function App() {
           <meta property="og:title" content="Nathan Davenport's Portfolio" />
           <meta
             property="og:description"
-            content="DESCRIPTION OF PAGE CONTENT"
+            content="Nathan Davenport is an aspiring front-end developer, UI/UX designer, and Georgia Tech student located in Midtown, Atlanta."
           />
           <meta
             property="og:image"

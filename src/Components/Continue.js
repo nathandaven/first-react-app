@@ -4,13 +4,6 @@ import { motion } from "framer-motion";
 import { ReactComponent as DownArrow } from "../Media/down-arrow.svg";
 import { ReactComponent as DownArrowLight } from "../Media/down-arrow-light.svg";
 
-const VARIANT_MAPS: Record<Variant, string> = {
-  DARK: "bg-primarygrey text-codewhite",
-  LIGHT:
-    "bg-codewhite text-primarygrey dark:bg-primarygrey dark:text-codewhite",
-  CIRCLE: "bg-circlebgfull bg-no-repeat bg-local bg-contain bg-top",
-};
-
 // Header Component
 class Continue extends Component {
   render() {
